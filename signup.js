@@ -4,7 +4,6 @@ $(function(){
             $(this).parent().find('.error').text('').hide();
         } else {
             $(this).parent().find('.error').text(validator.form[this.id].errorMessage).show();    
-
         }
     });
 
@@ -17,12 +16,11 @@ $(function(){
             console.log(validator.form.email.status);
             return false;
         }
-        //return true;
+    });
+    $('input.button.reset').click(function() {
+        $('.error').text('').hide();
     });
 
-    $('input.button.reset').click(function() {
-        console.log("hi");
-        return true;
-    });
+    
 
 });

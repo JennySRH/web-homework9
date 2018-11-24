@@ -31,6 +31,7 @@ h1{
 
 input.button {
     width:142px;
+    font-weight: bold;
     float: left;
     color: #09161f;
 }

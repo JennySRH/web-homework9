@@ -45,6 +45,8 @@ function registerUser(req, res) {
     });
 }
 
+
+
 function checkUser(user) {
     var errorMessages = [];
     for(var key in user) {
